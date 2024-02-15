@@ -7,7 +7,7 @@ const Home = () => {
     <HomeBox>
       <HomeImg src={Phonbook} alt='img' />
       <HomeDescr>
-        I offer a program to store your phone numbers contacts More of my works
+        I offer a program to store your phone numbers contacts. More of my works
         at GitHub:
         <a target='blank' href='https://github.com/Vovkatom'>
           <span style={{ color: 'blue' }}>Vladimir Bogachuck</span>
