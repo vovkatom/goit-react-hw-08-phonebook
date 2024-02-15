@@ -1,7 +1,5 @@
 import { createAsyncThunk } from '@reduxjs/toolkit';
 import axios from 'axios';
-import { createBrowserHistory } from 'history';
-const history = createBrowserHistory();
 
 axios.defaults.baseURL = 'https://connections-api.herokuapp.com/';
 
@@ -23,7 +21,7 @@ export const registerUser = createAsyncThunk(
       return data;
     } catch (error) {
       alert(error.message);
-      history.push('goit-react-hw-08-phonebook/register');
+
       return thunkAPI.rejectWithValue(error.message);
     }
   }
@@ -38,7 +36,7 @@ export const logInUser = createAsyncThunk(
       return data;
     } catch (error) {
       alert(error.message);
-      history.push('goit-react-hw-08-phonebook/login');
+
       return thunkAPI.rejectWithValue(error.message);
     }
   }
@@ -50,7 +48,7 @@ export const logOut = createAsyncThunk('auth/logout', async (_, thunkAPI) => {
     token.unset();
   } catch (error) {
     alert(error.message);
-    history.push('goit-react-hw-08-phonebook/');
+
     return thunkAPI.rejectWithValue(error.message);
   }
 });
@@ -69,7 +67,7 @@ export const refreshUser = createAsyncThunk(
       return data;
     } catch (error) {
       alert(error.message);
-      history.push('goit-react-hw-08-phonebook/');
+
       return thunkAPI.rejectWithValue(error.message);
     }
   }
