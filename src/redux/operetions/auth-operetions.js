@@ -20,7 +20,14 @@ export const registerUser = createAsyncThunk(
       token.set(data.token);
       return data;
     } catch (error) {
-      alert(error.message);
+      if (error.response && error.response.status === 400) {
+        // Обробка помилки з кодом 400 (наприклад, невірні дані при реєстрації)
+        const errorMessage = error.response.data.message || 'Error Registr...';
+        alert(errorMessage);
+      } else {
+        // Інші помилки
+        alert('Email is already in use. Please use a different email.');
+      }
 
       return thunkAPI.rejectWithValue(error.message);
     }
@@ -35,7 +42,7 @@ export const logInUser = createAsyncThunk(
       token.set(data.token);
       return data;
     } catch (error) {
-      alert(error.message);
+      // alert(error.message);
 
       return thunkAPI.rejectWithValue(error.message);
     }
@@ -47,7 +54,7 @@ export const logOut = createAsyncThunk('auth/logout', async (_, thunkAPI) => {
     await axios.post('/users/logout');
     token.unset();
   } catch (error) {
-    alert(error.message);
+    // alert(error.message);
 
     return thunkAPI.rejectWithValue(error.message);
   }
@@ -66,8 +73,7 @@ export const refreshUser = createAsyncThunk(
       const { data } = await axios.get('/users/current');
       return data;
     } catch (error) {
-      alert(error.message);
-
+      //alert(error.message);
       return thunkAPI.rejectWithValue(error.message);
     }
   }
