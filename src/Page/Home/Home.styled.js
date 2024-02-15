@@ -10,7 +10,7 @@ export const HomeBox = styled(Box)`
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  
+
   @media screen and (min-width: 500px) {
     flex-direction: row;
     justify-content: flex-start;

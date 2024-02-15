@@ -1,1 +1,1 @@
-export {default} from './Massege'
+export { default } from './Massege';

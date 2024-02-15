@@ -1,1 +1,1 @@
-export {default} from './ErrorCard'
+export { default } from './ErrorCard';

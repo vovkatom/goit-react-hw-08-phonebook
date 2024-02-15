@@ -45,7 +45,7 @@ const userAuthSlise = createSlice({
       .addCase(logOut.rejected, (state, { payload }) => {
         state.error = payload;
       })
-      .addCase(refreshUser.pending, (state) => {
+      .addCase(refreshUser.pending, state => {
         state.isRefreshUser = true;
       })
       .addCase(refreshUser.fulfilled, (state, { payload }) => {

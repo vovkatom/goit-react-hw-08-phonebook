@@ -65,7 +65,7 @@ export const LinkNav = styled(NavLink)`
   @media screen and (min-width: 768px) {
     font-size: 18px;
   }
-  
+
   &.active {
     color: #006400;
   }

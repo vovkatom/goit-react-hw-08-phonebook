@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 import { Container } from './NotFaund.styled';
-import {FcHome } from 'react-icons/fc';
+import { FcHome } from 'react-icons/fc';
 
 const NotFaund = () => {
   return (

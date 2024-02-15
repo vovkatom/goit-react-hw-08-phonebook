@@ -17,7 +17,7 @@ const Contacts = () => {
         <ContactForm />
         {error && <ErrorCard />}
         <div>
-          <Title title="Contacts"></Title>
+          <Title title='Contacts'></Title>
           <Filter />
           {operetion === 'fatch' && <Loader />}
           <ContactList />

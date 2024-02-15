@@ -29,16 +29,16 @@ const App = () => {
         <Loader />
       ) : (
         <Routes>
-          <Route path="/" element={<Header />}>
+          <Route path='/' element={<Header />}>
             <Route index element={<Home />} />
             <Route element={<PrivateRoute />}>
-              <Route path="contacts" element={<Contacts />} />
+              <Route path='contacts' element={<Contacts />} />
             </Route>
             <Route element={<PublicRoute />}>
-              <Route path="login" element={<AuthUserComponent />} />
-              <Route path="register" element={<AuthUserComponent />} />
+              <Route path='login' element={<AuthUserComponent />} />
+              <Route path='register' element={<AuthUserComponent />} />
             </Route>
-            <Route path="*" element={<NotFaund />} />
+            <Route path='*' element={<NotFaund />} />
           </Route>
         </Routes>
       )}

@@ -1,1 +1,1 @@
-export {default} from './NotFaund';
+export { default } from './NotFaund';

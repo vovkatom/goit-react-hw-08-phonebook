@@ -11,41 +11,41 @@ const Register = props => {
   return (
     <Fragment>
       <TextField
-        type="text"
-        name="name"
+        type='text'
+        name='name'
         required
-        size="small"
-        margin="normal"
+        size='small'
+        margin='normal'
         fullWidth={true}
-        label="Name"
-        placeholder="enter your name"
-        variant="outlined"
+        label='Name'
+        placeholder='enter your name'
+        variant='outlined'
         value={name}
         onChange={handlInputChange}
       />
       <TextField
-        type="text"
-        name="email"
+        type='text'
+        name='email'
         required
-        size="small"
-        margin="normal"
+        size='small'
+        margin='normal'
         fullWidth={true}
-        label="Email"
-        placeholder="enter your email"
-        variant="outlined"
+        label='Email'
+        placeholder='enter your email'
+        variant='outlined'
         value={email}
         onChange={handlInputChange}
       />
       <TextField
-        type="password"
-        name="password"
+        type='password'
+        name='password'
         required
-        size="small"
-        margin="normal"
+        size='small'
+        margin='normal'
         fullWidth={true}
-        label="Password"
-        placeholder="enter your password"
-        variant="outlined"
+        label='Password'
+        placeholder='enter your password'
+        variant='outlined'
         value={password}
         onChange={handlInputChange}
       />
@@ -55,12 +55,12 @@ const Register = props => {
           width: '50%',
           marginBottom: 2,
         }}
-        type="submit"
-        variant="contained"
+        type='submit'
+        variant='contained'
       >
         Register
       </Button>
-      <Typography variant="body1">
+      <Typography variant='body1'>
         Do you have an account?
         <Span onClick={() => navigate('/login')}>Login</Span>
       </Typography>

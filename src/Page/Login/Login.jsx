@@ -11,32 +11,32 @@ const Login = props => {
   return (
     <Fragment>
       <TextField
-        type="email"
-        name="email"
+        type='email'
+        name='email'
         required
         pattern="^[a-zA-Zа-яА-Я]+(([' -][a-zA-Zа-яА-Я ])?[a-zA-Zа-яА-Я]*)*$"
         title="Name may contain only letters, apostrophe, dash and spaces. For example Adrian, Jacob Mercer, Charles de Batz de Castelmore d'Artagnan"
-        size="small"
-        margin="normal"
+        size='small'
+        margin='normal'
         fullWidth={true}
-        label="Email"
-        placeholder="enter your email"
-        variant="outlined"
+        label='Email'
+        placeholder='enter your email'
+        variant='outlined'
         value={email}
         onChange={handlInputChange}
       />
       <TextField
-        type="password"
-        name="password"
+        type='password'
+        name='password'
         required
         pattern="^[a-zA-Zа-яА-Я]+(([' -][a-zA-Zа-яА-Я ])?[a-zA-Zа-яА-Я]*)*$"
         title="Name may contain only letters, apostrophe, dash and spaces. For example Adrian, Jacob Mercer, Charles de Batz de Castelmore d'Artagnan"
-        size="small"
-        margin="normal"
+        size='small'
+        margin='normal'
         fullWidth={true}
-        label="Password"
-        placeholder="enter your password"
-        variant="outlined"
+        label='Password'
+        placeholder='enter your password'
+        variant='outlined'
         value={password}
         onChange={handlInputChange}
       />
@@ -46,12 +46,12 @@ const Login = props => {
           width: '50%',
           marginBottom: 2,
         }}
-        type="submit"
-        variant="contained"
+        type='submit'
+        variant='contained'
       >
         Login
       </Button>
-      <Typography variant="body1">
+      <Typography variant='body1'>
         Don't have an account?
         <Span onClick={() => navigate('/register')}>Register</Span>
       </Typography>

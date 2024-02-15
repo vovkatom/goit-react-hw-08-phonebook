@@ -10,7 +10,7 @@ const Home = () => {
         I offer a program to store your phone numbers contacts More of my works
         at GitHub:
         <a target='blank' href='https://github.com/Vovkatom'>
-        <span style={{ color: 'blue' }}>Vladimir Bogachuck</span>
+          <span style={{ color: 'blue' }}>Vladimir Bogachuck</span>
         </a>
       </HomeDescr>
     </HomeBox>

@@ -12,10 +12,10 @@ const UserMenu = () => {
     <UserMenuBox>
       <UserMenuDescr>{`Welcome ${email}!`}</UserMenuDescr>
       <UserMenuButton
-        type="button"
-        size="small"
+        type='button'
+        size='small'
         onClick={() => dispatch(logOut())}
-        variant="contained"
+        variant='contained'
       >
         Logout
       </UserMenuButton>

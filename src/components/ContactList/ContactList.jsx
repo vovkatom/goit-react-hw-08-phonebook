@@ -42,10 +42,10 @@ const ContactList = () => {
               <ContactNumber>{number}</ContactNumber>
               <>
                 <Btn
-                  sx={{ width: '30%', }}
-                  variant="contained"
-                  size="small"
-                  type="button"
+                  sx={{ width: '30%' }}
+                  variant='contained'
+                  size='small'
+                  type='button'
                   onClick={e => {
                     toast.warning('The contact has been deleted!');
                     dispatch(deleteContacts(id));
@@ -53,11 +53,11 @@ const ContactList = () => {
                 >
                   {operetion === id ? (
                     <Audio
-                      height="24.4"
-                      width="40"
-                      color="#ffffff"
-                      ariaLabel="audio-loading"
-                      wrapperClass="wrapper-class"
+                      height='24.4'
+                      width='40'
+                      color='#ffffff'
+                      ariaLabel='audio-loading'
+                      wrapperClass='wrapper-class'
                       visible={true}
                     />
                   ) : (
